@@ -48,6 +48,6 @@ The above is the hardware that I used but some commands, setup might be differen
 * Look out for mode jumps
 
 
-# Help, I still don't know what is happening?
-You can write to me on moin[at]404chloenotfound.com. Please be kind to my repo, I'm a physicist- we are not known for our amazing coding skills :) The people at Toptica and HighFinesse are also very lovely and helped me a lot in writing this code.
+# Help, I still don't know what is happening
+You can write to me on moin[at]404chloenotfound.com. Please be kind to my repo, I'm just a physicist- we are not known for our amazing coding skills :) The people at Toptica and HighFinesse are also very lovely and helped me a lot in writing this code.
 
