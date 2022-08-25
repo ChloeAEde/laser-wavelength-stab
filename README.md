@@ -1,5 +1,5 @@
 # laser-wavelength-stab
-Controls the toptica DLC pro to make automatic changes to the voltage based off readings from the frequency of the laser. Allows user input of desired frequency. The programme will run contiunously until you manually stop it
+Controls the toptica DLC pro to make automatic changes to the voltage based off readings from the frequency of the laser. Allows user input of desired frequency. The programme will run contiunously until you manually stop it (uses multithreading to detect change from user input of new frequency value)
 
 # Saftey first
 You are going to be playing around with lasers so please be safe and take all procautions as you would do normally.
@@ -9,6 +9,7 @@ You are going to be playing around with lasers so please be safe and take all pr
 * HighFinesse WS7 series wavemeter
 
 # Requirements (Software)
+* Python 3.9
 * HighFinesse wavelength meter software (deliever with device)
 
 ## Disclaimer
@@ -20,7 +21,11 @@ The above is the hardware that I used but some commands, setup might be differen
 - Install the relevant packaages
 - Find the location of you .dll file from toptica (normally in the programme file section where the DLC pro software is installed)
 
-# Things you need to change in your code to match your system requirements
+# Things you need to change in the code to match your system requirements
+* DLL_PATH
+* set_value (the initial value you want the frequency set to) 
+* Port connection to DLC pro (port='COMX')
+* Frequency2 - change x in wlmData.dll.GetFrequencyNum(x,0) for what channel your wavemeter needs to read from
 
 # Helpful tip-bits when things dont work
 * Make sure the wavelength software is running on the same PC you are running the python file (it needs to be on and click start)
@@ -35,4 +40,4 @@ The above is the hardware that I used but some commands, setup might be differen
 
 
 # Help, I still don't know what is happening?
-You can write to me on moin[at]404chloenotfound.com. Please be kind to my repo, I'm a physcist- we are not know for our amazing coding skills :)
+You can write to me on moin[at]404chloenotfound.com. Please be kind to my repo, I'm a physcist- we are not know for our amazing coding skills :) The people at Toptica and HighFinesse are also very lovely and helped me a lot in writing this code. 
