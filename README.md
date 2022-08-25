@@ -1,5 +1,5 @@
 # laser-wavelength-stab
-Controls the Toptica DLC pro to make automatic changes to the voltage based off readings from the frequency of the laser. Allows user input of desired frequency. The program will run continuously until you manually stop it (uses multithreading to detect change from user input of new frequency value)
+Python file that keeps the Toptica laser at a constant frequency by changing the piezo voltages based on the frequency wanted by the user (avoiding drifts). The program will run continuously until you manually stop it (uses multithreading to detect change from user input of new frequency value based upon the read value on a HighFinesse wavelength meter)
 
 # Safety first
 You are going to be playing around with lasers so please be safe and take all precautions as you would do normally.
