@@ -31,7 +31,7 @@ The above is the hardware that I used but some commands, setup might be differen
 - Whooo run your code
 
 # Things you need to change in the code to match your system requirements
-* DLL_PATH
+* DLL_PATH (from HighFinesse folder)
 * set_value (the initial value you want the frequency set to) 
 * Port connection to DLC pro (port='COMX')
 * Frequency2 - change x in wlmData.dll.GetFrequencyNum(x,0) for what channel your wavemeter needs to read from
